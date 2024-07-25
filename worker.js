@@ -4,11 +4,11 @@ const config = {
   cors: true, // Allow Cross-origin resource sharing for API requests.
   unique_link: false, // If it is true, the same long url will be shorten into the same short url
   custom_link: true, // Allow users to customize the short url.
-  overwrite_kv: false, // Allow user to overwrite an existed key.
+  overwrite_kv: true, // Allow user to overwrite an existed key.
   snapchat_mode: false, // The link will be distroyed after access.
   visit_count: false, // Count visit times.
-  load_kv: false, // Load all from Cloudflare KV
-  system_type: "shorturl", // shorturl, imghost, other types {pastebin, journal}
+  load_kv: true, // Load all from Cloudflare KV
+  system_type: "journal", // shorturl, imghost, other types {pastebin, journal}
 }
 
 // key in protect_keylist can't read, add, del from UI and API
